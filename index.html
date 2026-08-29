@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QA TONY — внешний QA для сайтов, CRM и веб‑сервисов</title>
+  <meta name="description" content="Независимое тестирование сайтов и веб‑сервисов перед релизом: функциональность, мобильная версия, личные кабинеты, API, CRM/Bitrix24 и интеграции. Антон Горохов, QA Engineer, 5+ лет опыта.">
+  <meta name="theme-color" content="#0b1220">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="QA TONY — внешний QA перед релизом">
+  <meta property="og:description" content="Нахожу критические ошибки, оформляю доказательный баг‑лист и повторно проверяю исправления.">
+  <link rel="canonical" href="https://aqatony.github.io/test/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="QA TONY — на главную">
+        <span class="brand-mark" aria-hidden="true">QT</span>
+        <span class="brand-copy"><strong>QA TONY</strong><small>Release confidence</small></span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu-button>
+        <span></span><span></span><span></span><span class="sr-only">Открыть меню</span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Основная навигация" data-nav>
+        <a href="#services">Услуги</a>
+        <a href="#proof">Опыт</a>
+        <a href="#cases">Кейсы</a>
+        <a href="#prices">Стоимость</a>
+        <a class="nav-cta" href="https://t.me/QA_Tony" target="_blank" rel="noopener">Написать в Telegram</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Внешний QA-инженер · Тюмень / удалённо</p>
+          <h1>Нахожу ошибки <span>до того, как их увидит ваш клиент</span></h1>
+          <p class="hero-lead">Проверяю сайты, личные кабинеты, CRM и веб‑сервисы перед релизом. Вы получаете подтверждённые дефекты, приоритеты исправления, доказательства и повторную проверку — без найма ещё одного сотрудника.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://t.me/QA_Tony" target="_blank" rel="noopener">Обсудить проект <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="sample-report.html">Посмотреть пример отчёта</a>
+          </div>
+          <p class="microcopy">Для оценки достаточно ссылки, срока релиза и 3–5 ключевых сценариев.</p>
+        </div>
+
+        <aside class="release-card" aria-label="Пример результата релизной проверки">
+          <div class="release-card-head">
+            <div><span class="terminal-dot terminal-red"></span><span class="terminal-dot terminal-yellow"></span><span class="terminal-dot terminal-green"></span></div>
+            <span>release-check / summary</span>
+          </div>
+          <div class="release-status">
+            <span class="release-icon" aria-hidden="true">✓</span>
+            <div><strong>Решение по релизу</strong><p>Риски понятны, приоритеты расставлены</p></div>
+          </div>
+          <div class="metric-row"><span>Критические сценарии</span><strong>проверены</strong></div>
+          <div class="metric-row"><span>Дефекты</span><strong>с доказательствами</strong></div>
+          <div class="metric-row"><span>Console / Network / API</span><strong>зафиксированы</strong></div>
+          <div class="metric-row"><span>Ретест</span><strong>включён</strong></div>
+          <div class="report-fragment">
+            <p><span class="sev sev-high">HIGH</span> Оплата завершается без создания заказа</p>
+            <p><span class="sev sev-medium">MED</span> Ошибка валидации не объясняет причину</p>
+            <p><span class="sev sev-low">LOW</span> Смещение CTA на мобильном экране</p>
+          </div>
+        </aside>
+      </div>
+      <div class="container proof-strip" id="proof">
+        <article><strong>5+ лет</strong><span>в коммерческом QA</span></article>
+        <article><strong>200+ кейсов</strong><span>в базе для B2B CRM</span></article>
+        <article><strong>×2 быстрее</strong><span>регрессия на телеком‑проекте</span></article>
+        <article><strong>1K+ пользователей</strong><span>в тестируемой CRM</span></article>
+      </div>
+    </section>
+
+    <section class="section section-light" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow dark">Когда подключаюсь</p>
+          <h2>QA как управляемая часть релиза</h2>
+          <p>Не просто «покликаю сайт», а зафиксирую объём, проверю риски и передам результат, пригодный для работы разработчиков и решения о выпуске.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card featured">
+            <span class="service-number">01</span>
+            <h3>Приёмка перед релизом</h3>
+            <p>Критические пользовательские пути, формы, роли, авторизация, негативные сценарии, адаптивность, console/network.</p>
+            <ul><li>Release summary</li><li>Баг‑лист с приоритетами</li><li>Один цикл ретеста</li></ul>
+          </article>
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>QA для веб‑студий</h3>
+            <p>White‑label проверка проекта перед передачей заказчику или подключение на пиковую загрузку команды.</p>
+            <ul><li>Работа в вашей Jira/YouTrack</li><li>Без контакта с заказчиком без разрешения</li><li>Прозрачная граница работ</li></ul>
+          </article>
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>CRM, API и интеграции</h3>
+            <p>Bitrix24, обмен данными, внешние сервисы, статусы, уведомления, REST/SOAP API и проверки данных через SQL.</p>
+            <ul><li>Сквозные сценарии</li><li>Postman / Swagger</li><li>Логи и ответы API</li></ul>
+          </article>
+          <article class="service-card">
+            <span class="service-number">04</span>
+            <h3>Smoke‑автоматизация</h3>
+            <p>Повторяемые критические проверки на Python + Pytest + Playwright с отчётами и запуском в CI/CD.</p>
+            <ul><li>Надёжные селекторы</li><li>Скриншоты и traces</li><li>Инструкция для команды</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container outcome-layout">
+        <div>
+          <p class="eyebrow">Что получает команда</p>
+          <h2>Не список замечаний, а решение для релиза</h2>
+        </div>
+        <div class="outcome-list">
+          <article><span>01</span><div><h3>Итог на одной странице</h3><p>Что протестировано, что не входило в объём, ключевые риски и рекомендация по выпуску.</p></div></article>
+          <article><span>02</span><div><h3>Воспроизводимые дефекты</h3><p>Шаги, ожидаемый и фактический результат, окружение, severity, скриншоты, видео и технические следы.</p></div></article>
+          <article><span>03</span><div><h3>Приоритет исправлений</h3><p>Отделяю блокеры и потери заявок от косметики, чтобы команда не тратила релизное окно впустую.</p></div></article>
+          <article><span>04</span><div><h3>Проверка исправлений</h3><p>Повторно прохожу дефекты и затронутые сценарии, фиксирую итоговый статус.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="cases">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div><p class="eyebrow dark">Подтверждённый опыт</p><h2>Работал со сложными системами, а не только с лендингами</h2></div>
+          <p>Публичная версия без клиентских данных и закрытых артефактов.</p>
+        </div>
+        <div class="case-grid">
+          <article class="case-card">
+            <div class="case-meta"><span>B2B CRM</span><span>Bitrix24</span></div>
+            <h3>Систематизация тестирования CRM для 1K+ пользователей</h3>
+            <p>С нуля подготовил базу из 200+ тест‑кейсов, выстроил структуру TestRail и внедрил smoke‑автотесты на Python + Playwright.</p>
+            <div class="case-result"><strong>−25%</strong><span>времени регрессии</span></div>
+          </article>
+          <article class="case-card">
+            <div class="case-meta"><span>Телеком</span><span>CRM / API</span></div>
+            <h3>Ускорение регрессии в корпоративном телеком‑продукте</h3>
+            <p>Проверял CRM‑процессы, API и интеграционные сценарии, стандартизировал оформление и приоритизацию дефектов.</p>
+            <div class="case-result"><strong>2 → 1 день</strong><span>регрессия 200+ кейсов</span></div>
+          </article>
+          <article class="case-card">
+            <div class="case-meta"><span>Web platform</span><span>AI / CRM</span></div>
+            <h3>Сквозная проверка карьерной платформы</h3>
+            <p>Сайт, личный кабинет, конструктор резюме, AI‑ассистент, CRM Bitrix, уведомления и синхронизация данных между системами.</p>
+            <div class="case-result"><strong>Evidence first</strong><span>console, network, DOM, API</span></div>
+          </article>
+        </div>
+        <div class="evidence-banner">
+          <div><span class="evidence-icon" aria-hidden="true">↳</span><div><strong>Посмотрите, как выглядит результат</strong><p>Демонстрационные данные, реальная структура QA‑отчёта.</p></div></div>
+          <div class="evidence-actions"><a href="sample-report.html">Открыть отчёт</a><a href="sample-buglist.csv" download>Скачать баг‑лист CSV</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow dark">Процесс</p><h2>Понятно, что происходит на каждом шаге</h2></div>
+        <ol class="process-grid">
+          <li><span>1</span><h3>Оцениваю</h3><p>Ссылка, роли, ключевые сценарии, окружение и дата релиза.</p></li>
+          <li><span>2</span><h3>Фиксирую объём</h3><p>Что входит, браузеры, формат отчёта, срок и критерии завершения.</p></li>
+          <li><span>3</span><h3>Проверяю</h3><p>Ручное исследование + автоматизация повторяемых частей.</p></li>
+          <li><span>4</span><h3>Передаю решение</h3><p>Сводка, дефекты, доказательства, рекомендации и ретест.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section-light" id="prices">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div><p class="eyebrow dark">Стоимость</p><h2>Фиксированный результат вместо непрозрачных часов</h2></div>
+          <p>После короткой оценки объёма фиксирую границы, срок и цену. Новая функциональность оценивается отдельно.</p>
+        </div>
+        <div class="price-grid">
+          <article class="price-card">
+            <p class="price-label">Быстрый старт</p><h3>Экспресс‑аудит</h3><p class="price">7 900 ₽</p><p class="price-note">для сайта до 5 ключевых страниц</p>
+            <ul><li>Desktop + mobile</li><li>Формы и критические переходы</li><li>Console / network</li><li>Краткий отчёт + ретест</li></ul>
+            <a href="#contact" class="button button-dark">Запросить оценку</a>
+          </article>
+          <article class="price-card recommended">
+            <p class="price-label">Основной пакет</p><h3>Приёмка релиза</h3><p class="price">от 19 900 ₽</p><p class="price-note">до 10 критических сценариев</p>
+            <ul><li>Роли и личный кабинет</li><li>Негативные сценарии</li><li>API и интеграционные следы</li><li>Полный баг‑лист + ретест</li></ul>
+            <a href="#contact" class="button button-primary">Обсудить релиз</a>
+          </article>
+          <article class="price-card">
+            <p class="price-label">Регулярно</p><h3>Внешний QA</h3><p class="price">от 39 000 ₽</p><p class="price-note">пакет на календарный месяц</p>
+            <ul><li>Проверка релизов</li><li>Баги в системе команды</li><li>Еженедельная сводка</li><li>Согласованный лимит задач</li></ul>
+            <a href="#contact" class="button button-dark">Запросить условия</a>
+          </article>
+          <article class="price-card">
+            <p class="price-label">Автоматизация</p><h3>Playwright smoke</h3><p class="price">от 29 900 ₽</p><p class="price-note">критические web‑сценарии</p>
+            <ul><li>Python + Pytest + Playwright</li><li>Отчёты и доказательства</li><li>Запуск локально / CI</li><li>Документация для команды</li></ul>
+            <a href="#contact" class="button button-dark">Оценить сценарии</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ai-section">
+      <div class="container ai-layout">
+        <div class="ai-code" aria-hidden="true">
+          <div class="code-head"><span>qa_pipeline.py</span><span>human-verified</span></div>
+          <pre><code><span class="code-muted"># ускоряем рутину, не делегируем ответственность</span>
+coverage = codex.expand(requirements)
+checks = playwright.run(smoke_suite)
+evidence = collect(console, network, api)
+
+<span class="code-accent">for finding in evidence:</span>
+    qa_engineer.reproduce(finding)
+    qa_engineer.assign_risk(finding)
+    qa_engineer.approve_for_report(finding)</code></pre>
+        </div>
+        <div>
+          <p class="eyebrow">AI‑assisted QA</p>
+          <h2>Codex ускоряет работу. За результат отвечаю я.</h2>
+          <p>Использую LLM для расширения покрытия, негативных сценариев, черновиков автотестов и анализа логов. Каждый дефект воспроизвожу, селекторы и assertions проверяю вручную, конфиденциальные данные не передаю без согласования.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light faq-section">
+      <div class="container narrow">
+        <div class="section-heading"><p class="eyebrow dark">Вопросы</p><h2>Перед началом</h2></div>
+        <details><summary>Можно начать с небольшой задачи?</summary><p>Да. Пилот на одном релизе или одном критическом пути — лучший способ проверить формат взаимодействия без долгих обязательств.</p></details>
+        <details><summary>Вы работаете под брендом студии?</summary><p>Да. Могу оформлять дефекты в вашей системе и не контактировать с конечным заказчиком без отдельного разрешения.</p></details>
+        <details><summary>Что потребуется от команды?</summary><p>Доступ к стенду, тестовые аккаунты, описание ключевых сценариев и известные ограничения. Для production‑проверок заранее согласуем допустимые действия.</p></details>
+        <details><summary>Вы проводите аудит безопасности и нагрузочное тестирование?</summary><p>Только при отдельном согласовании и корректном разрешении владельца системы. Базовые пакеты предназначены для функционального, интеграционного, UI и API‑тестирования.</p></details>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow">Следующий релиз</p>
+          <h2>Пришлите ссылку — вернусь с объёмом, сроком и фиксированной ценой</h2>
+          <p>Можно без длинного технического задания. Достаточно описать продукт, дату релиза и самые важные пользовательские пути.</p>
+          <div class="direct-contacts">
+            <a href="https://t.me/QA_Tony" target="_blank" rel="noopener"><span>Telegram</span><strong>@QA_Tony ↗</strong></a>
+            <a href="mailto:agorokhov95@gmail.com"><span>Email</span><strong>agorokhov95@gmail.com</strong></a>
+          </div>
+        </div>
+        <form class="brief-form" data-brief-form>
+          <label>Ваше имя / компания<input name="name" autocomplete="name" placeholder="Например, Алексей / WebStudio" required></label>
+          <label>Ссылка на проект<input name="project" type="url" placeholder="https://example.ru"></label>
+          <label>Когда релиз?<input name="deadline" placeholder="Дата или «в течение недели»"></label>
+          <label>Что критично проверить?<textarea name="scope" rows="5" placeholder="Регистрация, заявка, личный кабинет, оплата, интеграция с CRM…" required></textarea></label>
+          <button class="button button-primary" type="submit">Подготовить сообщение</button>
+          <p class="form-note" data-form-note>Форма откроет готовое письмо в вашем почтовом приложении. Данные никуда не сохраняются.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand footer-brand"><span class="brand-mark">QT</span><span class="brand-copy"><strong>QA TONY</strong><small>Антон Горохов · QA Engineer</small></span></div>
+      <p>Web · CRM/Bitrix24 · API · Integrations · Python/Playwright</p>
+      <p>© <span data-year></span> QA TONY</p>
+    </div>
+  </footer>
+</body>
+</html>
