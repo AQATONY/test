@@ -1,0 +1,4 @@
+ID,Severity,Module,Title,Steps,Actual result,Expected result,Environment,Evidence,Status
+QA-001,High,Lead form,Форма показывает успех после API 500,"Открыть форму; заполнить; отправить при ответе API 500",Показан экран успеха; заявка не создана,Показана ошибка; введённые данные сохранены,Staging Chrome desktop,"video; HAR; response body",Open
+QA-002,Medium,Responsive,CTA перекрывает поле формы,"Открыть форму на 390x844; установить фокус; прокрутить вниз",CTA перекрывает поле и validation message,Элементы доступны без перекрытия,Staging Chrome mobile,screenshot,Open
+QA-003,High,Authorization,Профиль остаётся видимым после выхода,"Авторизоваться; открыть профиль; выйти; нажать Back",Данные профиля отображаются до refresh,Защищённый экран требует активную сессию,Staging Chrome,"video; storage snapshot",Open
