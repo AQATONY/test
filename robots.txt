@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aqatony.github.io/test/sitemap.xml
